@@ -5,10 +5,6 @@ TOKEN = "8255957753:AAFnaI7St8vi1DsE5m3Y3POxYsL7GBa3z20"
 CHAT_ID = "@MCQCompStructureUOK"
 
 bot = Bot(token=TOKEN)
-
-# ⏱ وقت كل سؤال (بالثواني)
-QUESTION_TIME = 15
-
 questions = [
 
     # 1
@@ -493,6 +489,20 @@ questions = [
 
 ]
 
+count = 1
+for q in questions:
+    print(f"Sending question {count}")
+    
+    bot.send_poll(
+        chat_id=CHAT_ID,
+        question=f"س{count}️⃣\n\n{q['q']}",
+        options=q["opts"],
+        correct_option_id=q["correct"],
+        type="quiz",
+        is_anonymous=True
+    )
+    
+    count += 1
+    time.sleep(3)   # ⭐ هذا السطر هو الحل
 
-    # ← سنضيف هنا الـ 40 سؤال لاحقًا
-
+print("✅ All questions sent")
