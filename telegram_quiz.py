@@ -1,503 +1,498 @@
 from telegram import Bot
 import time
 
-
 TOKEN = "8255957753:AAFnaI7St8vi1DsE5m3Y3POxYsL7GBa3z20"
 CHAT_ID = "@MCQCompStructureUOK"
 
 bot = Bot(token=TOKEN)
 
+# ⏱ وقت كل سؤال (بالثواني)
+QUESTION_TIME = 15
+
 questions = [
 
-# 1
-{
-"q": "CPU stands for?\nماذا تعني CPU؟",
-"opts": [
-"Central Program Unit (وحدة برنامج)",
-"Central Processing Unit (وحدة المعالجة)",
-"Computer Unit (وحدة الحاسوب)",
-"Control Unit (وحدة التحكم)"
-],
-"correct": 1
-},
+    # 1
+    {
+        "q": "CPU stands for?\n(ما معنى CPU؟)",
+        "opts": [
+            "Central Program Unit – وحدة برنامج مركزية",
+            "Central Processing Unit – وحدة المعالجة المركزية",
+            "Computer Unit – وحدة الحاسوب",
+            "Control Unit – وحدة التحكم"
+        ],
+        "correct": 1
+    },
 
-# 2
-{
-"q": "What is the main role of the CPU?\nما الوظيفة الرئيسية للمعالج؟",
-"opts": [
-"Store data permanently (تخزين دائم)",
-"Display output (عرض النتائج)",
-"Process data into information (معالجة البيانات)",
-"Connect devices (ربط الأجهزة)"
-],
-"correct": 2
-},
+    # 2
+    {
+        "q": "What is the main function of CPU?\n(ما الوظيفة الرئيسية للمعالج؟)",
+        "opts": [
+            "Store data – تخزين البيانات",
+            "Process data – معالجة البيانات",
+            "Display output – عرض النتائج",
+            "Input data – إدخال البيانات"
+        ],
+        "correct": 1
+    },
 
-# 3
-{
-"q": "Which unit controls all CPU operations?\nأي وحدة تتحكم بعمل المعالج؟",
-"opts": [
-"ALU (وحدة الحساب)",
-"Register (سجل)",
-"Control Unit (وحدة التحكم)",
-"Bus (ناقل)"
-],
-"correct": 2
-},
+    # 3
+    {
+        "q": "Which unit performs arithmetic and logic operations?\n(أي وحدة تنفذ العمليات الحسابية والمنطقية؟)",
+        "opts": [
+            "CU – وحدة التحكم",
+            "ALU – وحدة الحساب والمنطق",
+            "RAM – الذاكرة",
+            "Register – المسجل"
+        ],
+        "correct": 1
+    },
 
-# 4
-{
-"q": "Which unit performs arithmetic operations?\nأي وحدة تنفذ العمليات الحسابية؟",
-"opts": [
-"CU (وحدة التحكم)",
-"ALU (الحساب والمنطق)",
-"Register (سجل)",
-"Memory (ذاكرة)"
-],
-"correct": 1
-},
+    # 4
+    {
+        "q": "Which part controls CPU operations?\n(أي جزء يتحكم بعمل المعالج؟)",
+        "opts": [
+            "ALU – الحساب والمنطق",
+            "RAM – الذاكرة",
+            "CU – وحدة التحكم",
+            "Cache – الذاكرة المخبأة"
+        ],
+        "correct": 2
+    },
 
-# 5
-{
-"q": "Which is NOT part of the CPU?\nأي مما يلي ليس جزءًا من المعالج؟",
-"opts": [
-"ALU (الحساب والمنطق)",
-"Control Unit (وحدة التحكم)",
-"Registers (السجلات)",
-"Printer (الطابعة)"
-],
-"correct": 3
-},
+    # 5
+    {
+        "q": "What does RAM stand for?\n(ما معنى RAM؟)",
+        "opts": [
+            "Read Access Memory – ذاكرة قراءة",
+            "Random Access Memory – ذاكرة وصول عشوائي",
+            "Rapid Access Memory – ذاكرة سريعة",
+            "Run Access Memory – ذاكرة تشغيل"
+        ],
+        "correct": 1
+    },
 
-# 6
-{
-"q": "Registers are:\nالسجلات هي:",
-"opts": [
-"Slow storage (تخزين بطيء)",
-"Permanent storage (تخزين دائم)",
-"High-speed temporary storage (تخزين سريع مؤقت)",
-"Input devices (أجهزة إدخال)"
-],
-"correct": 2
-},
+    # 6
+    {
+        "q": "RAM is a:\n(ذاكرة RAM هي؟)",
+        "opts": [
+            "Permanent memory – دائمة",
+            "Temporary memory – مؤقتة",
+            "Secondary storage – ثانوية",
+            "Input device – جهاز إدخال"
+        ],
+        "correct": 1
+    },
 
-# 7
-{
-"q": "What does ALU stand for?\nماذا تعني ALU؟",
-"opts": [
-"Arithmetic Logic Unit (الحساب والمنطق)",
-"Advanced Logic Unit (منطق متقدم)",
-"Access Logic Unit (وحدة وصول)",
-"Arithmetic Load Unit (تحميل حسابي)"
-],
-"correct": 0
-},
+    # 7
+    {
+        "q": "Which memory is non-volatile?\n(أي ذاكرة لا تفقد البيانات بانقطاع الكهرباء؟)",
+        "opts": [
+            "RAM – ذاكرة مؤقتة",
+            "Cache – مخبأة",
+            "ROM – ذاكرة دائمة",
+            "Register – مسجل"
+        ],
+        "correct": 2
+    },
 
-# 8
-{
-"q": "Which register holds the next instruction address?\nأي سجل يحمل عنوان التعليمة التالية؟",
-"opts": [
-"IR (سجل التعليمة)",
-"PC (عداد البرنامج)",
-"MAR (سجل العناوين)",
-"Accumulator (المجمع)"
-],
-"correct": 1
-},
+    # 8
+    {
+        "q": "ROM is used to store:\n(تُستخدم ROM لخزن؟)",
+        "opts": [
+            "User files – ملفات المستخدم",
+            "Operating system – النظام",
+            "Boot instructions – تعليمات الإقلاع",
+            "Temporary data – بيانات مؤقتة"
+        ],
+        "correct": 2
+    },
 
-# 9
-{
-"q": "Which register holds the current instruction?\nأي سجل يحمل التعليمة الحالية؟",
-"opts": [
-"PC (عداد البرنامج)",
-"IR (سجل التعليمة)",
-"MAR (سجل العناوين)",
-"ACC (المجمع)"
-],
-"correct": 1
-},
+    # 9
+    {
+        "q": "Cache memory is:\n(الذاكرة المخبأة هي؟)",
+        "opts": [
+            "Slower than RAM – أبطأ من RAM",
+            "Faster than RAM – أسرع من RAM",
+            "Same speed as HDD – مثل القرص",
+            "External memory – خارجية"
+        ],
+        "correct": 1
+    },
 
-# 10
-{
-"q": "Which register stores operation results?\nأي سجل يخزن نتائج العمليات؟",
-"opts": [
-"PC (عداد البرنامج)",
-"IR (سجل التعليمة)",
-"Accumulator (المجمع)",
-"MAR (سجل العناوين)"
-],
-"correct": 2
-},
+    # 10
+    {
+        "q": "Cache memory is located:\n(أين توجد Cache؟)",
+        "opts": [
+            "Inside CPU – داخل المعالج",
+            "Inside hard disk – داخل القرص",
+            "Inside keyboard – داخل لوحة المفاتيح",
+            "Inside monitor – داخل الشاشة"
+        ],
+        "correct": 0
+    },
 
-# 11
-{
-"q": "What is the first step in machine cycle?\nما أول خطوة في دورة الآلة؟",
-"opts": [
-"Execute (تنفيذ)",
-"Decode (فك الترميز)",
-"Fetch (جلب التعليمة)",
-"Store (تخزين)"
-],
-"correct": 2
-},
+    # 11
+    {
+        "q": "Which is an input device?\n(أي مما يلي جهاز إدخال؟)",
+        "opts": [
+            "Monitor – شاشة",
+            "Printer – طابعة",
+            "Keyboard – لوحة مفاتيح",
+            "Speaker – سماعة"
+        ],
+        "correct": 2
+    },
 
-# 12
-{
-"q": "Which step decodes the instruction?\nأي خطوة تفك ترميز التعليمة؟",
-"opts": [
-"Fetch (جلب)",
-"Decode (فك الترميز)",
-"Execute (تنفيذ)",
-"Store (تخزين)"
-],
-"correct": 1
-},
+    # 12
+    {
+        "q": "Which is an output device?\n(أي مما يلي جهاز إخراج؟)",
+        "opts": [
+            "Mouse – فأرة",
+            "Scanner – ماسح",
+            "Monitor – شاشة",
+            "Keyboard – لوحة مفاتيح"
+        ],
+        "correct": 2
+    },
 
-# 13
-{
-"q": "Which step executes the instruction?\nأي خطوة تنفذ التعليمة؟",
-"opts": [
-"Fetch (جلب)",
-"Decode (فك)",
-"Execute (تنفيذ)",
-"Store (تخزين)"
-],
-"correct": 2
-},
+    # 13
+    {
+        "q": "Which device is both input and output?\n(أي جهاز إدخال وإخراج معًا؟)",
+        "opts": [
+            "Keyboard – لوحة مفاتيح",
+            "Monitor – شاشة",
+            "Touch screen – شاشة لمس",
+            "Printer – طابعة"
+        ],
+        "correct": 2
+    },
 
-# 14
-{
-"q": "What does MAR stand for?\nماذا تعني MAR؟",
-"opts": [
-"Memory Access Register (وصول)",
-"Memory Address Register (عنوان الذاكرة)",
-"Main Address Register (عنوان رئيسي)",
-"Machine Address Register (عنوان آلة)"
-],
-"correct": 1
-},
+    # 14
+    {
+        "q": "Hard disk is:\n(القرص الصلب هو؟)",
+        "opts": [
+            "Primary memory – ذاكرة أولية",
+            "Temporary memory – مؤقتة",
+            "Secondary storage – خزن ثانوي",
+            "Register – مسجل"
+        ],
+        "correct": 2
+    },
 
-# 15
-{
-"q": "What is a bus?\nما هو الناقل (Bus)؟",
-"opts": [
-"Storage unit (وحدة تخزين)",
-"Electronic pathway (مسار إلكتروني)",
-"Input device (إدخال)",
-"Processing unit (معالجة)"
-],
-"correct": 1
-},
+    # 15
+    {
+        "q": "Which stores data permanently?\n(أي يخزن البيانات بشكل دائم؟)",
+        "opts": [
+            "RAM – ذاكرة مؤقتة",
+            "Cache – مخبأة",
+            "Hard disk – قرص صلب",
+            "Register – مسجل"
+        ],
+        "correct": 2
+    },
 
-# 16
-{
-"q": "Which bus carries data?\nأي ناقل ينقل البيانات؟",
-"opts": [
-"Address bus (العناوين)",
-"Control bus (التحكم)",
-"Data bus (البيانات)",
-"System bus (النظام)"
-],
-"correct": 2
-},
+    # 16
+    {
+        "q": "Registers are:\n(المسجلات هي؟)",
+        "opts": [
+            "Very fast memory – ذاكرة فائقة السرعة",
+            "Slow memory – بطيئة",
+            "External memory – خارجية",
+            "Secondary storage – ثانوية"
+        ],
+        "correct": 0
+    },
 
-# 17
-{
-"q": "Which bus carries addresses?\nأي ناقل يحمل العناوين؟",
-"opts": [
-"Data bus (البيانات)",
-"Control bus (التحكم)",
-"Address bus (العناوين)",
-"Expansion bus (توسعة)"
-],
-"correct": 2
-},
+    # 17
+    {
+        "q": "Registers are located:\n(أين توجد المسجلات؟)",
+        "opts": [
+            "Inside CPU – داخل المعالج",
+            "Inside RAM – داخل RAM",
+            "Inside hard disk – داخل القرص",
+            "Outside computer – خارج الحاسوب"
+        ],
+        "correct": 0
+    },
 
-# 18
-{
-"q": "Which bus carries control signals?\nأي ناقل يحمل إشارات التحكم؟",
-"opts": [
-"Data bus (بيانات)",
-"Address bus (عناوين)",
-"Control bus (تحكم)",
-"System bus (نظام)"
-],
-"correct": 2
-},
+    # 18
+    {
+        "q": "Which is the smallest memory?\n(أصغر نوع ذاكرة؟)",
+        "opts": [
+            "RAM",
+            "Cache",
+            "Register",
+            "Hard disk"
+        ],
+        "correct": 2
+    },
 
-# 19
-{
-"q": "Binary system uses:\nالنظام الثنائي يستخدم:",
-"opts": [
-"0 and 1 (صفر وواحد)",
-"0 to 9 (أرقام عشرية)",
-"A and B (حروف)",
-"True only (صح فقط)"
-],
-"correct": 0
-},
+    # 19
+    {
+        "q": "Main memory refers to:\n(الذاكرة الرئيسية هي؟)",
+        "opts": [
+            "Cache",
+            "RAM",
+            "Hard disk",
+            "Flash memory"
+        ],
+        "correct": 1
+    },
 
-# 20
-{
-"q": "Decimal system has how many digits?\nكم عدد أرقام النظام العشري؟",
-"opts": [
-"2 digits",
-"8 digits",
-"10 digits",
-"16 digits"
-],
-"correct": 2
-},
+    # 20
+    {
+        "q": "What is a bus?\n(ما هو الـ Bus؟)",
+        "opts": [
+            "Storage unit – وحدة خزن",
+            "Data transfer path – مسار نقل بيانات",
+            "Input device – جهاز إدخال",
+            "Output device – جهاز إخراج"
+        ],
+        "correct": 1
+    },
 
-# 21
-{
-"q": "Binary system has how many digits?\nكم عدد أرقام النظام الثنائي؟",
-"opts": [
-"2 digits",
-"8 digits",
-"10 digits",
-"16 digits"
-],
-"correct": 0
-},
+    # 21
+    {
+        "q": "Data bus carries:\n(ناقل البيانات ينقل؟)",
+        "opts": [
+            "Addresses – العناوين",
+            "Control signals – إشارات تحكم",
+            "Actual data – البيانات",
+            "Instructions only – تعليمات فقط"
+        ],
+        "correct": 2
+    },
 
-# 22
-{
-"q": "What does ASCII stand for?\nماذا تعني ASCII؟",
-"opts": [
-"American Standard Code for Information Interchange",
-"Advanced System Code",
-"Automatic Symbol Code",
-"Applied System Code"
-],
-"correct": 0
-},
+    # 22
+    {
+        "q": "Address bus carries:\n(ناقل العناوين ينقل؟)",
+        "opts": [
+            "Data – بيانات",
+            "Addresses – عناوين",
+            "Signals – إشارات",
+            "Instructions – تعليمات"
+        ],
+        "correct": 1
+    },
 
-# 23
-{
-"q": "ASCII uses how many bits?\nكم عدد البتات في ASCII؟",
-"opts": [
-"4 bits",
-"8 bits",
-"16 bits",
-"32 bits"
-],
-"correct": 1
-},
+    # 23
+    {
+        "q": "Control bus carries:\n(ناقل التحكم ينقل؟)",
+        "opts": [
+            "Data – بيانات",
+            "Addresses – عناوين",
+            "Control signals – إشارات تحكم",
+            "Files – ملفات"
+        ],
+        "correct": 2
+    },
 
-# 24
-{
-"q": "Unicode uses how many bits?\nكم عدد البتات في Unicode؟",
-"opts": [
-"8 bits",
-"16 bits",
-"32 bits",
-"64 bits"
-],
-"correct": 1
-},
+    # 24
+    {
+        "q": "Which is NOT hardware?\n(أي مما يلي ليس عتادًا؟)",
+        "opts": [
+            "Keyboard",
+            "Monitor",
+            "Operating System",
+            "CPU"
+        ],
+        "correct": 2
+    },
 
-# 25
-{
-"q": "Unicode can represent:\nUnicode يستطيع تمثيل:",
-"opts": [
-"English only",
-"Numbers only",
-"Most world languages",
-"Binary only"
-],
-"correct": 2
-},
+    # 25
+    {
+        "q": "Operating System is:\n(نظام التشغيل هو؟)",
+        "opts": [
+            "Hardware – عتاد",
+            "Software – برنامج",
+            "Input device – إدخال",
+            "Output device – إخراج"
+        ],
+        "correct": 1
+    },
 
-# 26
-{
-"q": "Which coding is used in mainframes?\nأي ترميز يُستخدم في الحواسيب الكبيرة؟",
-"opts": [
-"ASCII",
-"EBCDIC",
-"Unicode",
-"Binary"
-],
-"correct": 1
-},
+    # 26
+    {
+        "q": "Which starts the computer?\n(ما الذي يبدأ تشغيل الحاسوب؟)",
+        "opts": [
+            "RAM",
+            "ROM",
+            "BIOS – برنامج الإقلاع",
+            "CPU"
+        ],
+        "correct": 2
+    },
 
-# 27
-{
-"q": "PC register stores:\nعداد البرنامج يخزن:",
-"opts": [
-"Current instruction",
-"Next instruction address",
-"Data value",
-"Result"
-],
-"correct": 1
-},
+    # 27
+    {
+        "q": "BIOS is stored in:\n(أين يُخزن BIOS؟)",
+        "opts": [
+            "RAM",
+            "ROM",
+            "Cache",
+            "Hard disk"
+        ],
+        "correct": 1
+    },
 
-# 28
-{
-"q": "IR register stores:\nسجل التعليمة يخزن:",
-"opts": [
-"Next instruction",
-"Memory address",
-"Current instruction",
-"Results"
-],
-"correct": 2
-},
+    # 28
+    {
+        "q": "Which memory is fastest?\n(أسرع ذاكرة؟)",
+        "opts": [
+            "Hard disk",
+            "RAM",
+            "Cache",
+            "Register"
+        ],
+        "correct": 3
+    },
 
-# 29
-{
-"q": "Accumulator is used for:\nالمجمع يُستخدم لـ:",
-"opts": [
-"Addressing",
-"Storing results",
-"Fetching instructions",
-"Decoding"
-],
-"correct": 1
-},
+    # 29
+    {
+        "q": "Which is volatile memory?\n(أي ذاكرة متطايرة؟)",
+        "opts": [
+            "ROM",
+            "Hard disk",
+            "RAM",
+            "Flash"
+        ],
+        "correct": 2
+    },
 
-# 30
-{
-"q": "Bus width affects:\nعرض الناقل يؤثر على:",
-"opts": [
-"Storage size",
-"Processing speed",
-"Data transfer speed",
-"Power usage"
-],
-"correct": 2
-},
+    # 30
+    {
+        "q": "Flash memory is:\n(ذاكرة الفلاش هي؟)",
+        "opts": [
+            "Volatile – متطايرة",
+            "Non-volatile – غير متطايرة",
+            "Primary memory – أولية",
+            "Register – مسجل"
+        ],
+        "correct": 1
+    },
 
-# 31
-{
-"q": "ALU performs logic operations like:\nالعمليات المنطقية مثل:",
-"opts": [
-"Add only",
-"Subtract only",
-"Compare values",
-"Store data"
-],
-"correct": 2
-},
+    # 31
+    {
+        "q": "Which is secondary storage?\n(أي خزن ثانوي؟)",
+        "opts": [
+            "RAM",
+            "Cache",
+            "Hard disk",
+            "Register"
+        ],
+        "correct": 2
+    },
 
-# 32
-{
-"q": "Which is temporary storage?\nأي تخزين مؤقت؟",
-"opts": [
-"Hard disk",
-"SSD",
-"Registers",
-"Flash drive"
-],
-"correct": 2
-},
+    # 32
+    {
+        "q": "CPU speed is measured in:\n(تقاس سرعة المعالج بـ؟)",
+        "opts": [
+            "Bytes",
+            "Hertz (Hz)",
+            "Volts",
+            "Bits"
+        ],
+        "correct": 1
+    },
 
-# 33
-{
-"q": "Which component interprets instructions?\nأي مكون يفسر التعليمات؟",
-"opts": [
-"ALU",
-"CU",
-"Register",
-"Bus"
-],
-"correct": 1
-},
+    # 33
+    {
+        "q": "1 Byte equals:\n(البايت يساوي؟)",
+        "opts": [
+            "4 bits",
+            "8 bits",
+            "16 bits",
+            "32 bits"
+        ],
+        "correct": 1
+    },
 
-# 34
-{
-"q": "Machine cycle has how many steps?\nكم عدد خطوات دورة الآلة؟",
-"opts": [
-"2",
-"3",
-"4",
-"5"
-],
-"correct": 2
-},
+    # 34
+    {
+        "q": "Which unit fetches instructions?\n(أي وحدة تجلب التعليمات؟)",
+        "opts": [
+            "ALU",
+            "CU",
+            "RAM",
+            "Register"
+        ],
+        "correct": 1
+    },
 
-# 35
-{
-"q": "Which step stores result?\nأي خطوة تخزن النتيجة؟",
-"opts": [
-"Fetch",
-"Decode",
-"Execute",
-"Store"
-],
-"correct": 3
-},
+    # 35
+    {
+        "q": "Instruction cycle starts with:\n(دورة التعليمة تبدأ بـ؟)",
+        "opts": [
+            "Execute – تنفيذ",
+            "Fetch – جلب",
+            "Decode – فك",
+            "Store – خزن"
+        ],
+        "correct": 1
+    },
 
-# 36
-{
-"q": "Binary 1 means:\nالرقم 1 يعني:",
-"opts": [
-"Off",
-"On",
-"Error",
-"Null"
-],
-"correct": 1
-},
+    # 36
+    {
+        "q": "Which memory stores currently running programs?\n(أي ذاكرة تخزن البرامج الجارية؟)",
+        "opts": [
+            "ROM",
+            "Hard disk",
+            "RAM",
+            "Flash"
+        ],
+        "correct": 2
+    },
 
-# 37
-{
-"q": "Binary 0 means:\nالرقم 0 يعني:",
-"opts": [
-"On",
-"Off",
-"True",
-"Signal"
-],
-"correct": 1
-},
+    # 37
+    {
+        "q": "Output of ALU is sent to:\n(ناتج ALU يُرسل إلى؟)",
+        "opts": [
+            "RAM",
+            "Register",
+            "Cache",
+            "Hard disk"
+        ],
+        "correct": 1
+    },
 
-# 38
-{
-"q": "CPU works with:\nالمعالج يعمل مع:",
-"opts": [
-"Keyboard",
-"Mouse",
-"Main memory",
-"Monitor"
-],
-"correct": 2
-},
+    # 38
+    {
+        "q": "Which device converts paper to digital?\n(أي جهاز يحول الورق إلى رقمي؟)",
+        "opts": [
+            "Printer",
+            "Scanner",
+            "Monitor",
+            "Speaker"
+        ],
+        "correct": 1
+    },
 
-# 39
-{
-"q": "Which is output device?\nأي جهاز إخراج؟",
-"opts": [
-"Keyboard",
-"Mouse",
-"Monitor",
-"Scanner"
-],
-"correct": 2
-},
+    # 39
+    {
+        "q": "Which stores OS files?\n(أين تُخزن ملفات النظام؟)",
+        "opts": [
+            "RAM",
+            "Cache",
+            "Hard disk",
+            "Register"
+        ],
+        "correct": 2
+    },
 
-# 40
-{
-"q": "Main function of bus:\nالوظيفة الرئيسية للناقل:",
-"opts": [
-"Store data",
-"Process data",
-"Transfer data",
-"Display data"
-],
-"correct": 2
-}
+    # 40
+    {
+        "q": "Computer works on:\n(الحاسوب يعمل بنظام؟)",
+        "opts": [
+            "Manual processing – يدوي",
+            "Mechanical processing – ميكانيكي",
+            "Electronic processing – إلكتروني",
+            "Human processing – بشري"
+        ],
+        "correct": 2
+    }
 
 ]
 
-for item in questions:
-    bot.send_poll(
-        chat_id=CHAT_ID,
-        question=item["q"],
-        options=item["opts"],
-        correct_option_id=item["correct"],
-        type="quiz",
-        is_anonymous=True
-    )
-    time.sleep(1)
+
+    # ← سنضيف هنا الـ 40 سؤال لاحقًا
+
