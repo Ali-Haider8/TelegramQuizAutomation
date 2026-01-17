@@ -2,16 +2,21 @@ from telegram import Bot
 from telegram.error import RetryAfter
 import time
 
-TOKEN = "8255957753:AAFnaI7St8vi1DsE5m3Y3POxYsL7GBa3z20"
-CHAT_ID = "@MCQCompStructureUOK"   # القناة التي سيتم الإرسال إليها
+TOKEN = "8196288289:AAHDXCoia2YQy5sO_Fq9fq-_rU9QwaCMC3I"
+CHAT_ID = "@HumanRightsMidQuiz"
 
+bot = Bot(token=TOKEN)
 bot = Bot(token=TOKEN)
 
 message_text = (
-    "📌 Computer Structure MCQs\n\n"
-    "Join the quiz channel from the link below:\n"
-    "انضم إلى قناة الاختبارات المحدثة من الرابط التالي:\n\n"
-    "🔗 https://t.me/MCQCompStructureUOK2"
+    "📢 *تنبيه هام لضمان النجاح والتفوق*\n\n"
+    "🔹 *المفتاح الحقيقي للنجاح:*\n"
+    "• الدراسة العملية والمركزة للمصادر الأساسية أولاً.\n"
+    "• المراجعة الجادة هي الضمان الوحيد للتفوق.\n\n"
+    "🔹 *الهدف من هذه الاختبارات:*\n"
+    "• وسيلة إضافية للتسلية والفائدة فقط.\n"
+    "• تنشيط الذاكرة والتعرف على نمط الأسئلة.\n"
+    "• اختبار دقة دراستك بأسلوب تفاعلي بعد المذاكرة."
 )
 
 while True:
@@ -19,14 +24,12 @@ while True:
         bot.send_message(
             chat_id=CHAT_ID,
             text=message_text,
-            disable_web_page_preview=False,
-            disable_notification=True   # 🔕 إرسال صامت
-
+            disable_web_page_preview=True,
+            disable_notification=True,
+            parse_mode='Markdown'  # أضف هذا السطر هنا
         )
         print("Message sent successfully ✅")
         break
 
     except RetryAfter as e:
-        wait_time = e.retry_after + 1
-        print(f"Flood control, waiting {wait_time} seconds...")
-        time.sleep(wait_time)
+        time.sleep(e.retry_after + 1)
