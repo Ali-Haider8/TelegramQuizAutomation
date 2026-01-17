@@ -2,8 +2,7 @@ from telegram import Bot
 from telegram.error import RetryAfter
 import time
 
-TOKEN = "8196288289:AAHDXCoia2YQy5sO_Fq9fq-_rU9QwaCMC3I"
-CHAT_ID = "@HumanRightsMidQuiz"
+
 
 bot = Bot(token=TOKEN)
 bot = Bot(token=TOKEN)

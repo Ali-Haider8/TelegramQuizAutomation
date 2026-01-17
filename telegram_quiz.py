@@ -5,7 +5,7 @@ import time
 # =========================
 # CONFIG
 # =========================
-CHAT_ID = "@HumanRightsMidQuiz"
+
 BASE_DELAY = 3.0
 
 bot = Bot(token=TOKEN)
