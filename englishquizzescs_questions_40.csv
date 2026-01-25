@@ -1,0 +1,41 @@
+id,section,question,option_1,option_2,option_3,correct_index
+1,A,"I ___ a headache this morning, but now I feel better.",had,am,have,0
+2,A,She ___ a very intelligent student.,are,is,has,1
+3,A,They ___ a big party last weekend.,were,have,had,2
+4,A,We ___ so happy to see you yesterday!,were,had,are,0
+5,A,He ___ three siblings who live in Canada.,is,has,have,1
+6,A,You ___ in the library when I called you.,are,had,were,2
+7,A,The house ___ a beautiful garden in the backyard.,has,is,had,0
+8,A,I ___ not sure if they will come tonight.,is,am,have,1
+9,A,She ___ an important meeting tomorrow morning.,is,had,has,2
+10,A,They ___ very friendly and helpful neighbors.,are,have,is,0
+11,B,"He usually ___ economics, but this semester he is working in administration.",is teaching,teaches,,1
+12,B,I ___ the explanation is clear enough.,am not thinking,don't think,,1
+13,B,"At this time last week, we ___ the final project.",were discussing,discussed,,0
+14,B,She ___ the mistake until the results were published.,wasn't noticing,didn't notice,,1
+15,B,"While the manager ___, everyone listened carefully.",talked,was talking,,1
+16,B,More students ___ online courses these days.,are preferring,prefer,,1
+17,B,What ___ when the system suddenly crashed?,were you doing,did you do,,0
+18,B,He ___ at a university for five years before he changed jobs.,worked,was working,,0
+19,B,I ___ an old friend while I was shopping.,was meeting,met,,1
+20,B,"When I entered the office, they ___ about the budget.",argued,were arguing,,1
+21,C,I ___ TV when the electricity went out.,watched,was watching,,1
+22,C,"While she ___ dinner, the phone rang.",cooked,was cooking,,1
+23,C,They ___ football when it started to rain.,played,were playing,,1
+24,C,He ___ his keys while he was walking to the office.,lost,was losing,,0
+25,C,We ___ about the problem when the teacher arrived.,talked,were talking,,1
+26,C,What ___ when I called you last night?,were you doing,did you do,,0
+27,C,She ___ a book when she heard a strange noise.,read,was reading,,1
+28,C,"While the students ___ the exam, the fire alarm rang.",took,were taking,,1
+29,C,I ___ asleep while I was listening to the lecture.,fell,was falling,,0
+30,C,They ___ in the park when they saw the accident.,walked,were walking,,1
+31,D,"She usually ___ to university by bus, but today she walked.",is going,goes,,1
+32,D,"We ___ the report yesterday, so it is ready now.",finished,were finishing,,0
+33,D,"I ___ him before, but I don't remember his name.",met,have met,,1
+34,D,"While I ___ for the exam, my friends were watching TV.",studied,was studying,,1
+35,D,"They ___ live near the campus, so they rent an apartment.",aren't,don't,,1
+36,D,He ___ very tired last night after the long trip.,was,is,,0
+37,D,"She ___ her homework yet, so she cannot go out.",didn't finish,hasn't finished,,1
+38,D,"When the teacher entered the class, the students ___ quietly.",sat,were sitting,,1
+39,D,I ___ English for three years before I joined the university.,had studied,was studying,,0
+40,D,"He ___ speak French, but he understands it well.",isn't,can't,,1
