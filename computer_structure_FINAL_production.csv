@@ -1,0 +1,110 @@
+﻿lecture_number,lecture_name,question,option_1,option_2,option_3,option_4,correct_option
+1,Computer Basics & Definitions,What is a computer? (ما هو الحاسوب؟),Electronic device that processes data,Machine only for storage,Calculator only,Device without memory,option_1
+1,Computer Basics & Definitions,Data refers to: (البيانات تعني),Processed information,Raw facts,Programs,Instructions,option_2
+1,Computer Basics & Definitions,Information is: (المعلومات هي),Raw data,Meaningful processed data,Random symbols,Unorganized facts,option_2
+1,Computer Basics & Definitions,Main computer cycle is: (دورة عمل الحاسوب),Input-Output,Input-Process-Output,Process-Store,Store-Execute,option_2
+1,Computer Basics & Definitions,CPU stands for: (CPU تعني),Central Processing Unit,Control Program Unit,Computer Power Unit,Central Performance Unit,option_1
+1,Computer Basics & Definitions,CPU is called brain because: (يسمى دماغ الحاسوب لأنه),Stores data,Processes & controls,Displays output,Supplies power,option_2
+1,Computer Basics & Definitions,Hardware means: (الهاردوير يعني),Programs,Physical parts,Data,Instructions,option_2
+1,Computer Basics & Definitions,Software means: (السوفتوير يعني),Hardware devices,Programs & instructions,Input units,Output units,option_2
+1,Computer Basics & Definitions,Which is software? (أيها برنامج),Keyboard,Monitor,Operating System,Printer,option_3
+1,Computer Basics & Definitions,Without software hardware is: (بدون برامج يكون الحاسوب),Fully usable,Useless,Faster,Independent,option_2
+1,Computer Basics & Definitions,Input devices are used to: (أجهزة الإدخال تستخدم لـ),Display results,Enter data,Store data,Process data,option_2
+1,Computer Basics & Definitions,Output devices are used to: (أجهزة الإخراج تستخدم لـ),Enter data,Display information,Process data,Store data,option_2
+1,Computer Basics & Definitions,Example of output device: (مثال جهاز إخراج),Keyboard,Mouse,Monitor,Scanner,option_3
+1,Computer Basics & Definitions,Example of input device: (مثال جهاز إدخال),Printer,Speaker,Monitor,Keyboard,option_4
+1,Computer Basics & Definitions,Storage unit is used to: (وحدة الخزن تستخدم لـ),Input,Output,Store data,Process,option_3
+1,Computer Basics & Definitions,Which part processes data? (أي جزء يعالج البيانات),Input unit,CPU,Output unit,Storage,option_2
+2,Categories of Computers,Supercomputers are used for: (تستخدم الحواسيب العملاقة لـ),Games,Scientific simulations,Office work,Mobile apps,option_2
+2,Categories of Computers,Mainframe computers are suitable for: (الحواسيب المركزية مناسبة لـ),Single user,Large organizations,Home use,Gaming,option_2
+2,Categories of Computers,Personal computers are designed for: (الحواسيب الشخصية مخصصة لـ),Multiple users,Single user,Servers,Weather forecast,option_2
+2,Categories of Computers,Which has highest power? (الأعلى قدرة معالجة),PC,Mainframe,Supercomputer,Mini computer,option_3
+2,Categories of Computers,Computers classification depends on: (تصنيف الحواسيب يعتمد على),Color,Processing power,Brand,Size only,option_2
+2,Categories of Computers,Mini computers are used in: (الحواسيب الصغيرة تستخدم في),Homes,Small organizations,Research centers,Personal gaming,option_2
+2,Categories of Computers,Laptop is a type of: (الحاسوب المحمول هو),Mainframe,Supercomputer,Personal computer,Mini computer,option_3
+2,Categories of Computers,Smartphone is considered: (الهاتف الذكي يعتبر),Supercomputer,Personal computer,Embedded system,Mainframe,option_2
+2,Categories of Computers,Servers are mainly used for: (الخوادم تستخدم لـ),Gaming,Providing services,Personal use,Editing,option_2
+2,Categories of Computers,Embedded systems are found in: (الأنظمة المدمجة توجد في),PCs,Cars & appliances,Servers,Supercomputers,option_2
+2,Categories of Computers,Which is smallest? (الأصغر حجماً),Mainframe,Supercomputer,Embedded system,PC,option_3
+2,Categories of Computers,Which supports many users? (يدعم مستخدمين كُثر),PC,Laptop,Mainframe,Tablet,option_3
+2,Categories of Computers,Personal computers advantage: (ميزة الحواسيب الشخصية),High cost,Ease of use,Multi-user,Industrial use,option_2
+2,Categories of Computers,Supercomputers feature: (ميزة الحواسيب العملاقة),Low power,Parallel processing,Low speed,Small size,option_2
+2,Categories of Computers,Tablet is classified as: (الجهاز اللوحي يصنف),Mainframe,PC,Mobile computer,Supercomputer,option_3
+3,Number Systems & Binary Representation,Binary system base is: (أساس النظام الثنائي),2,8,10,16,option_1
+3,Number Systems & Binary Representation,Binary digits are: (أرقام النظام الثنائي),0-9,0-7,0 and 1,1-16,option_3
+3,Number Systems & Binary Representation,Decimal system base is: (أساس النظام العشري),2,8,10,16,option_3
+3,Number Systems & Binary Representation,Octal system base is: (أساس النظام الثماني),2,8,10,16,option_2
+3,Number Systems & Binary Representation,Hexadecimal system uses: (النظام الست عشري يستخدم),0-9,0-7,0-9 and A-F,1-16,option_3
+3,Number Systems & Binary Representation,Binary digit is called: (الرقم الثنائي يسمى),Byte,Bit,Nibble,Word,option_2
+3,Number Systems & Binary Representation,8 bits equal: (8 بت تساوي),Nibble,Word,Byte,KB,option_3
+3,Number Systems & Binary Representation,Convert (1010)₂ to decimal: (حوّل 1010),8,9,10,12,option_3
+3,Number Systems & Binary Representation,Convert (111)₂ to decimal: (حوّل 111),6,7,8,5,option_2
+3,Number Systems & Binary Representation,Decimal 5 in binary is: (5 عشري بالثنائي),101,110,111,100,option_1
+3,Number Systems & Binary Representation,Binary system suits computers because: (الثنائي مناسب للحاسوب لأن),Simple circuits,More digits,Human friendly,Fast writing,option_1
+3,Number Systems & Binary Representation,Nibble equals: (Nibble يساوي),2 bits,4 bits,8 bits,16 bits,option_2
+3,Number Systems & Binary Representation,Hexadecimal digit A equals: (A بالست عشري تساوي),9,10,11,12,option_2
+3,Number Systems & Binary Representation,Which is valid binary? (عدد ثنائي صحيح),10201,11102,10101,123,option_3
+3,Number Systems & Binary Representation,Which is positional system? (نظام موضعي),Roman,Binary,Unary,Symbolic,option_2
+3,Number Systems & Binary Representation,Octal digit range is: (مدى الثماني),0-7,0-8,1-8,0-9,option_1
+3,Number Systems & Binary Representation,Hexadecimal base equals: (أساس الست عشري),12,14,15,16,option_4
+3,Number Systems & Binary Representation,Binary 1000 equals decimal: (1000 ثنائي),6,7,8,9,option_3
+4,"CPU, Registers & Buses",CPU main components are: (مكونات المعالج),ALU & RAM,CU & ALU,Registers & HDD,I/O units,option_2
+4,"CPU, Registers & Buses",ALU performs: (وحدة ALU تقوم بـ),Control operations,Arithmetic & logic operations,Storage,Display,option_2
+4,"CPU, Registers & Buses",Control Unit function is: (وظيفة وحدة التحكم),Arithmetic,Coordination & control,Storage,Output,option_2
+4,"CPU, Registers & Buses",Registers are: (المسجلات هي),Slow storage,Fast internal storage,Secondary memory,Input buffers,option_2
+4,"CPU, Registers & Buses",Program Counter stores: (عداد البرنامج يخزن),Current instruction,Next instruction address,Data only,Signals,option_2
+4,"CPU, Registers & Buses",Instruction Register stores: (مسجل التعليمة يخزن),Instruction being executed,Next address,Data,Signals,option_1
+4,"CPU, Registers & Buses",Data Bus carries: (ناقل البيانات ينقل),Addresses,Control signals,Actual data,Power,option_3
+4,"CPU, Registers & Buses",Address Bus carries: (ناقل العناوين ينقل),Data,Addresses,Sound,Images,option_2
+4,"CPU, Registers & Buses",Control Bus carries: (ناقل التحكم يحمل),Data,Addresses,Control signals,Power,option_3
+4,"CPU, Registers & Buses",Fetch-Decode-Execute cycle is: (دورة الجلب),Instruction processing,Data storage,Output display,Memory install,option_1
+4,"CPU, Registers & Buses",Width of address bus determines: (عرض ناقل العناوين يحدد),CPU speed,Max memory,OS type,Monitor size,option_2
+4,"CPU, Registers & Buses",Registers are faster than: (المسجلات أسرع من),Cache,RAM,CPU,ALU,option_2
+4,"CPU, Registers & Buses",PC is incremented during: (يزداد عداد البرنامج أثناء),Fetch,Execute,Store,Output,option_1
+4,"CPU, Registers & Buses",MAR holds: (MAR يحمل),Instruction,Memory address,Data,Control,option_2
+4,"CPU, Registers & Buses",CU directs: (وحدة التحكم توجه),Storage,Processing steps,Display,Power,option_2
+5,Memory Hierarchy & Cache,Fastest memory is: (أسرع ذاكرة),HDD,RAM,Cache,Registers,option_4
+5,Memory Hierarchy & Cache,Cache memory is used to: (تستخدم الكاش لـ),Permanent storage,Reduce access time,Replace RAM,Store output,option_2
+5,Memory Hierarchy & Cache,Cache is: (الكاش),Slower than RAM,Faster than RAM,Equal to HDD,Used only for storage,option_2
+5,Memory Hierarchy & Cache,L1 cache is: (كاش L1),Slowest,Fastest,Equal to L2,External,option_2
+5,Memory Hierarchy & Cache,Main memory refers to: (الذاكرة الرئيسية),Cache,Registers,RAM,HDD,option_3
+5,Memory Hierarchy & Cache,Largest capacity memory is: (أكبر سعة),Registers,Cache,RAM,Secondary storage,option_4
+5,Memory Hierarchy & Cache,Volatile memory is: (ذاكرة متطايرة),ROM,Flash,RAM,HDD,option_3
+5,Memory Hierarchy & Cache,Cache hit means: (Cache Hit يعني),Data not found,Data found in cache,CPU stopped,Cache disabled,option_2
+5,Memory Hierarchy & Cache,Cache miss means: (Cache Miss يعني),Data in cache,Fetched from lower level,CPU halted,Error,option_2
+5,Memory Hierarchy & Cache,Increasing cache size: (زيادة حجم الكاش),Lower hit rate,Higher hit rate,No effect,Slower CPU,option_2
+5,Memory Hierarchy & Cache,Memory hierarchy balances: (هرمية الذاكرة توازن),Speed only,Cost only,"Speed, cost & capacity",Size only,option_3
+5,Memory Hierarchy & Cache,Cache located: (موقع الكاش),Outside CPU,Inside CPU,On HDD,On RAM,option_2
+5,Memory Hierarchy & Cache,Cost per bit highest in: (أعلى كلفة لكل بت),HDD,RAM,Cache,Registers,option_4
+5,Memory Hierarchy & Cache,Access time is lowest in: (أقل زمن وصول),HDD,RAM,Cache,Registers,option_4
+5,Memory Hierarchy & Cache,Memory closer to CPU is: (الأقرب للمعالج),Faster,Slower,Cheaper,Larger,option_1
+6,Primary Storage (RAM & ROM),RAM stands for: (RAM تعني),Read Access Memory,Random Access Memory,Rapid Action Memory,Ready Access Module,option_2
+6,Primary Storage (RAM & ROM),ROM stands for: (ROM تعني),Read Only Memory,Random Output Memory,Rapid Operation Memory,Ready Only Module,option_1
+6,Primary Storage (RAM & ROM),RAM is: (RAM هي),Non-volatile,Volatile,Secondary storage,Read-only,option_2
+6,Primary Storage (RAM & ROM),ROM is non-volatile because: (ROM غير متطايرة لأنها),Loses data,Retains data,Faster than RAM,Temporary,option_2
+6,Primary Storage (RAM & ROM),DRAM requires: (DRAM تحتاج),No refresh,Periodic refresh,UV light,Magnetism,option_2
+6,Primary Storage (RAM & ROM),SRAM is: (SRAM هي),Slower & cheaper,Faster & expensive,Volatile,Secondary storage,option_2
+6,Primary Storage (RAM & ROM),SRAM is used for: (تستخدم SRAM لـ),Main memory,Cache,BIOS,Hard disk,option_2
+6,Primary Storage (RAM & ROM),PROM can be: (PROM يمكن),Rewritten many times,Programmed once,Volatile,Refreshed,option_2
+6,Primary Storage (RAM & ROM),EPROM erased by: (تمسح EPROM بواسطة),Electricity,UV light,Heat,Magnetism,option_2
+6,Primary Storage (RAM & ROM),BIOS stored in: (البيوس يخزن في),RAM,Cache,ROM/Flash ROM,HDD,option_3
+6,Primary Storage (RAM & ROM),DDR is type of: (DDR نوع من),ROM,RAM,Cache,Register,option_2
+6,Primary Storage (RAM & ROM),EEPROM erased by: (EEPROM تمسح بـ),UV,Electricity,Heat,Magnetism,option_2
+6,Primary Storage (RAM & ROM),RAM contents lost when: (تفقد RAM محتواها عند),Power off,Program close,OS crash,Sleep,option_1
+6,Primary Storage (RAM & ROM),ROM stores: (ROM تخزن),Temporary data,Firmware,User files,Cache,option_2
+6,Primary Storage (RAM & ROM),Primary storage is: (الخزن الأولي هو),RAM & ROM,HDD,SSD,DVD,option_1
+7,Secondary Storage & Hard Disk,Secondary storage is: (الخزن الثانوي),Temporary,Permanent,CPU memory,Cache,option_2
+7,Secondary Storage & Hard Disk,HDD stores data using: (القرص الصلب يخزن بـ),Magnetism,Electric charge,Laser,Semiconductors,option_1
+7,Secondary Storage & Hard Disk,HDD spinning part is: (الجزء الدوار),Controller,Platter,Cache,Cable,option_2
+7,Secondary Storage & Hard Disk,HDD head: (رأس القراءة),Touches disk,Floats above disk,Stores data,Controls speed,option_2
+7,Secondary Storage & Hard Disk,SSD differs because it: (SSD يختلف لأنه),Uses disks,No moving parts,Slower,Consumes more power,option_2
+7,Secondary Storage & Hard Disk,SSD advantage is: (ميزة SSD),Lower cost,Faster access,Larger size,Mechanical,option_2
+7,Secondary Storage & Hard Disk,Shock resistant storage is: (الأكثر مقاومة للصدمات),HDD,SSD,DVD,Tape,option_2
+7,Secondary Storage & Hard Disk,Secondary storage non-volatile means: (غير متطاير يعني),Loses data,Retains data,Needs refresh,Power only,option_2
+7,Secondary Storage & Hard Disk,Backup medium is: (وسيط النسخ الاحتياطي),Registers,Cache,Magnetic tape,RAM,option_3
+7,Secondary Storage & Hard Disk,Compared to RAM secondary storage is: (مقارنة بالرام),Faster,Slower & cheaper,Volatile,Inside CPU,option_2
+7,Secondary Storage & Hard Disk,Optical disks use: (الأقراص الضوئية تستخدم),Magnetism,Laser,Electric charge,Semiconductors,option_2
+7,Secondary Storage & Hard Disk,DVD is type of: (DVD هو نوع),Magnetic,Optical,Flash,RAM,option_2
+7,Secondary Storage & Hard Disk,SSD uses: (SSD يستخدم),Magnetic disks,Flash memory,Laser,Platters,option_2
+7,Secondary Storage & Hard Disk,Access time of SSD is: (زمن وصول SSD),High,Low,Same as HDD,Very high,option_2
+7,Secondary Storage & Hard Disk,Secondary storage capacity is: (سعة الخزن الثانوي),Small,Large,Tiny,Limited,option_2

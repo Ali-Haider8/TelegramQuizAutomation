@@ -2,13 +2,16 @@ from telegram import Bot
 from telegram.error import RetryAfter, BadRequest, TimedOut, NetworkError
 import time
 import random
+import csv
+import os
 
 # =========================
 # CONFIG
 # =========================
 
-CHAT_ID = "@EnglishQuizzesCS"
-
+TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = "@ComputerStructureQuizzesCSUoK"
+CSV_FILE = "computer_structure_questions.csv"
 BASE_DELAY = 3.0
 
 bot = Bot(token=TOKEN)
@@ -16,7 +19,6 @@ bot = Bot(token=TOKEN)
 # =========================
 # SEND QUIZ FUNCTION
 # =========================
-
 
 def send_quiz(question_text, options, correct_index):
     while True:
@@ -30,7 +32,6 @@ def send_quiz(question_text, options, correct_index):
                 is_anonymous=True,
                 disable_notification=True,
             )
-
             return
 
         except RetryAfter as e:
@@ -46,230 +47,72 @@ def send_quiz(question_text, options, correct_index):
 
 
 # =========================
-# QUESTIONS (55)
-# English is primary + Arabic short helper
+# LOAD QUESTIONS FROM CSV
 # =========================
-questions = [
-    {
-        "q": "I ___ a headache this morning, but now I feel better.",
-        "opts": ["had", "have", "am"],
-        "correct": 0,
-    },
-    {
-        "q": "She ___ a very intelligent student.",
-        "opts": ["is", "are", "has"],
-        "correct": 0,
-    },
-    {
-        "q": "They ___ a big party last weekend.",
-        "opts": ["had", "have", "were"],
-        "correct": 0,
-    },
-    {
-        "q": "We ___ so happy to see you yesterday!",
-        "opts": ["were", "are", "had"],
-        "correct": 0,
-    },
-    {
-        "q": "He ___ three siblings who live in Canada.",
-        "opts": ["has", "have", "is"],
-        "correct": 0,
-    },
-    {
-        "q": "You ___ in the library when I called you.",
-        "opts": ["were", "are", "had"],
-        "correct": 0,
-    },
-    {
-        "q": "The house ___ a beautiful garden in the backyard.",
-        "opts": ["has", "had", "is"],
-        "correct": 0,
-    },
-    {
-        "q": "I ___ not sure if they will come tonight.",
-        "opts": ["am", "is", "have"],
-        "correct": 0,
-    },
-    {
-        "q": "She ___ an important meeting tomorrow morning.",
-        "opts": ["has", "had", "is"],
-        "correct": 0,
-    },
-    {
-        "q": "They ___ very friendly and helpful neighbors.",
-        "opts": ["are", "is", "have"],
-        "correct": 0,
-    },
-    {
-        "q": "He usually ___ economics, but this semester he is working in administration.",
-        "opts": ["teaches", "is teaching"],
-        "correct": 0,
-    },
-    {
-        "q": "I ___ the explanation is clear enough.",
-        "opts": ["don't think", "am not thinking"],
-        "correct": 0,
-    },
-    {
-        "q": "At this time last week, we ___ the final project.",
-        "opts": ["discussed", "were discussing"],
-        "correct": 1,
-    },
-    {
-        "q": "She ___ the mistake until the results were published.",
-        "opts": ["didn't notice", "wasn't noticing"],
-        "correct": 0,
-    },
-    {
-        "q": "While the manager ___, everyone listened carefully.",
-        "opts": ["was talking", "talked"],
-        "correct": 0,
-    },
-    {
-        "q": "More students ___ online courses these days.",
-        "opts": ["are preferring", "prefer"],
-        "correct": 1,
-    },
-    {
-        "q": "What ___ when the system suddenly crashed?",
-        "opts": ["did you do", "were you doing"],
-        "correct": 1,
-    },
-    {
-        "q": "He ___ at a university for five years before he changed jobs.",
-        "opts": ["worked", "was working"],
-        "correct": 0,
-    },
-    {
-        "q": "I ___ an old friend while I was shopping.",
-        "opts": ["met", "was meeting"],
-        "correct": 0,
-    },
-    {
-        "q": "When I entered the office, they ___ about the budget.",
-        "opts": ["argued", "were arguing"],
-        "correct": 1,
-    },
-    # =========================
-    # SECTION C: Past Simple vs Past Continuous (PDF)
-    # =========================
-    {
-        "q": "I ___ TV when the electricity went out.",
-        "opts": ["was watching", "watched"],
-        "correct": 0,
-    },
-    {
-        "q": "While she ___ dinner, the phone rang.",
-        "opts": ["was cooking", "cooked"],
-        "correct": 0,
-    },
-    {
-        "q": "They ___ football when it started to rain.",
-        "opts": ["were playing", "played"],
-        "correct": 0,
-    },
-    {
-        "q": "He ___ his keys while he was walking to the office.",
-        "opts": ["lost", "was losing"],
-        "correct": 0,
-    },
-    {
-        "q": "We ___ about the problem when the teacher arrived.",
-        "opts": ["were talking", "talked"],
-        "correct": 0,
-    },
-    {
-        "q": "What ___ when I called you last night?",
-        "opts": ["were you doing", "did you do"],
-        "correct": 0,
-    },
-    {
-        "q": "She ___ a book when she heard a strange noise.",
-        "opts": ["was reading", "read"],
-        "correct": 0,
-    },
-    {
-        "q": "While the students ___ the exam, the fire alarm rang.",
-        "opts": ["were taking", "took"],
-        "correct": 0,
-    },
-    {
-        "q": "I ___ asleep while I was listening to the lecture.",
-        "opts": ["fell", "was falling"],
-        "correct": 0,
-    },
-    {
-        "q": "They ___ in the park when they saw the accident.",
-        "opts": ["were walking", "walked"],
-        "correct": 0,
-    },
-    # =========================
-    # SECTION D: Mixed Grammar Revision (PDF)
-    # =========================
-    {
-        "q": "She usually ___ to university by bus, but today she walked.",
-        "opts": ["goes", "is going"],
-        "correct": 0,
-    },
-    {
-        "q": "We ___ the report yesterday, so it is ready now.",
-        "opts": ["finished", "were finishing"],
-        "correct": 0,
-    },
-    {
-        "q": "I ___ him before, but I don't remember his name.",
-        "opts": ["have met", "met"],
-        "correct": 0,
-    },
-    {
-        "q": "While I ___ for the exam, my friends were watching TV.",
-        "opts": ["was studying", "studied"],
-        "correct": 0,
-    },
-    {
-        "q": "They ___ live near the campus, so they rent an apartment.",
-        "opts": ["don't", "aren't"],
-        "correct": 0,
-    },
-    {
-        "q": "He ___ very tired last night after the long trip.",
-        "opts": ["was", "is"],
-        "correct": 0,
-    },
-    {
-        "q": "She ___ her homework yet, so she cannot go out.",
-        "opts": ["hasn't finished", "didn't finish"],
-        "correct": 0,
-    },
-    {
-        "q": "When the teacher entered the class, the students ___ quietly.",
-        "opts": ["were sitting", "sat"],
-        "correct": 0,
-    },
-    {
-        "q": "I ___ English for three years before I joined the university.",
-        "opts": ["had studied", "was studying"],
-        "correct": 0,
-    },
-    {
-        "q": "He ___ speak French, but he understands it well.",
-        "opts": ["can't", "isn't"],
-        "correct": 0,
-    },
-]
+
+def load_questions_from_csv(path):
+    questions = []
+
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+
+        # print("CSV columns:", reader.fieldnames)
+
+        for row in reader:
+            # ---------- options ----------
+            options = []
+            for i in range(1, 5):
+                value = row.get(f"option_{i}")
+                if value:
+                    value = value.strip()
+                    if value:
+                        options.append(value)
+
+            if len(options) < 2:
+                continue  # تجاهل السؤال غير الصالح
+
+            # ---------- correct option ----------
+            correct_option_name = (
+                row.get("correct_option")
+                or row.get("correct")
+                or row.get("answer")
+            )
+
+            if not correct_option_name:
+                continue
+
+            correct_option_name = correct_option_name.strip()
+
+            try:
+                correct_index = int(correct_option_name.split("_")[1]) - 1
+            except:
+                continue
+
+            # ---------- question ----------
+            question_text = row.get("question") or row.get("q")
+            if not question_text:
+                continue
+
+            question_text = question_text.strip()
+
+            questions.append({
+                "q": question_text,
+                "opts": options,
+                "correct": correct_index,
+                "topic": row.get("topic", "").strip(),
+            })
+
+    return questions
 
 
 # =========================
-# SEND ALL QUESTIONS
+# SHUFFLE OPTIONS
 # =========================
-print(f"Sending {len(questions)} questions...")
-
 
 def shuffle_options(options, correct_index):
     paired = [
         (opt, i == correct_index)
         for i, opt in enumerate(options)
-        if opt  # يتجاهل الخيارات الفارغة
     ]
 
     random.shuffle(paired)
@@ -282,10 +125,20 @@ def shuffle_options(options, correct_index):
     return shuffled_options, new_correct_index
 
 
+# =========================
+# MAIN
+# =========================
+
+questions = load_questions_from_csv(CSV_FILE)
+
+print(f"Loaded {len(questions)} questions from CSV")
+
 for idx, q in enumerate(questions, start=1):
     numbered_question = f"{idx}- {q['q']}"
 
-    shuffled_opts, new_correct = shuffle_options(q["opts"], q["correct"])
+    shuffled_opts, new_correct = shuffle_options(
+        q["opts"], q["correct"]
+    )
 
     send_quiz(numbered_question, shuffled_opts, new_correct)
 
