@@ -4,7 +4,7 @@ import time
 import os
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-CHAT_ID = "@EnglishQuizzesCSUoK"
+CHAT_ID = "@ArabicQuizzesCSUoK"
 
 bot = Bot(token=BOT_TOKEN)
 
@@ -12,7 +12,7 @@ def load_message_from_file(path):
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
 
-MESSAGE_FILE = "pinned_message_english.md"
+MESSAGE_FILE = "pinned_message_arabic.md"
 message_text = load_message_from_file(MESSAGE_FILE)
 
 while True:
