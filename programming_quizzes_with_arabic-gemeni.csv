@@ -1,21 +1,28 @@
 question,option_1,option_2,option_3,option_4,correct_option
-"A set of logically written, sequential steps that solve a particular problem.",pseudo-code,Algorithm,,,option_2
-"Which of the following is not a type of flowchart?","Sequential flowcharts","Branched flowcharts","Loop flowcharts","Reserved flowchart",option_4
-"Which of the following is not a condition for an algorithm?","Use flowchart or pseudo-code","Arrange by sequence, selection, or iteration","Should use one programming language",,option_3
-"A graphical representation that shows the behavior (workflow) of an algorithm.",Algorithm,Flowchart,,,option_2
-"Java considers the variables number and NuMbEr to be identical.",True,False,,,option_2
-"A program that translates a high-level language program into a machine language.",Compiler,NetBeans,,,option_1
-"To be able to read inputs for the Java program, which class must be imported?",System.in,Scanner,,,option_2
-"Which one is not an error that can occur in a Java program?","Syntax Errors","Runtime Errors","Logical Errors","Warning Errors",option_4
-"Java is a case-sensitive language.",True,False,,,option_1
-"The memory requirement for byte data type is:","1 byte = 8 bits","4 bytes = 32 bits",,,option_1
-"Which type of Operators have higher precedence?","Unary Operators ( - + ~ ! -- ++ )","Logical Operators ( && || ! )",,,option_1
-"The \t escape character is used for:","Return to start of line","Create a tab",,,option_2
-"When is the logical expression AND true?","If a or b is true","If a and b are true","If both a and b are false",,option_2
-"Is 2ab a valid variable name in Java?",Yes,No,,,option_2
-"What is Java Virtual Machine (JVM)?","Abstract machine to run Java programs","Programs invoked from cmd for testing",,,option_1
-"Which method is used to read an integer?",nextFloat(),nextLine(),nextInt(),,option_3
-"When is the logical expression OR true?","Both a and b are true","At least one is true","Both a and b are false",,option_2
-"A location in the computer's memory where a value can be stored for use later.",String,Variable,"Main Class",,option_2
-"Java provides developers with some advantages:","Auto memory management & multithreading","Manual memory allocation & single thread",,,option_1
-"Which of the following begins an end-of-line comment?",//,space,\,*/,option_1
+"A set of logically written, sequential steps that solve a problem (خطوات حل).",Pseudo-code,Algorithm,,,"option_2"
+"Which is NOT a type of flowchart (مخطط)؟","Sequential flowchart","Branched flowchart","Loop flowchart","Reserved flowchart","option_4"
+"Which is NOT a condition for writing an algorithm (خورازمية)؟","Use flowchart or pseudo-code","Use sequence/selection/iteration","Use one programming language",,"option_3"
+"A graphical representation showing workflow of an algorithm (سير عمل).",Algorithm,Flowchart,,,"option_2"
+"Java considers number and NuMbEr identical (حساسية).",True,False,,,"option_2"
+"A program that translates high‑level code to machine code (مترجم).",Compiler,NetBeans,,,"option_1"
+"Which class must be imported to read input (إدخال)؟",System.in,Scanner,,,"option_2"
+"Which is NOT an error type in Java (خطأ)؟","Syntax Error","Runtime Error","Logical Error","Warning Error","option_4"
+"Java is case‑sensitive (حساسة).",True,False,,,"option_1"
+"Memory size of byte data type (ذاكرة).","1 byte = 8 bits","4 bytes = 32 bits",,,"option_1"
+"Which operators have higher precedence (أولوية)؟","Unary Operators","Logical Operators",,,"option_1"
+"The \\t escape character is used to (جدولة).","Return to start of line","Create a tab",,,"option_2"
+"When is AND expression true (منطق AND)؟","a or b is true","a and b are true","both false",,"option_2"
+"Is 2ab a valid Java variable name (متغير)؟",Yes,No,,,"option_2"
+"What is JVM (آلة جافا)؟","Abstract machine to run Java","CMD tools for testing",,,"option_1"
+"Which method reads an integer (عدد صحيح)؟",nextFloat(),nextLine(),nextInt(),,"option_3"
+"When is OR expression true (منطق OR)؟","Both true","At least one true","Both false",,"option_2"
+"A memory location to store a value (ذاكرة).",String,Variable,"Main Class",,"option_2"
+"Java advantages include (ميزات).","Auto memory + multithreading","Manual memory + single thread",,,"option_1"
+"Which begins an end‑of‑line comment (تعليق)؟","//","space","\\","*/","option_1"
+"(+) operator is a type of arithmetic operator (حسابية).","Arithmetic","Logical","Equality",,"option_1"
+"Type of error in: float y = 5; (خطأ).","Syntax: int y = 5","Syntax: float Y = 5",,,"option_2"
+"Increment operator ++ increases by (زيادة).","+2","+1",,,"option_2"
+"When all switch cases are false, which executes (سويتش)؟","case 0","default",,,"option_2"
+"Which imports Scanner class (استيراد)؟","import Java.Util.Scanner","import java.util.scanner","import java.util.Scanner",,"option_3"
+"Casting char to int gives (تحويل).","ASCII value","String value",,,"option_1"
+"Case values in switch must be (قيم case).","Constant expressions","Range expressions",,,"option_1"

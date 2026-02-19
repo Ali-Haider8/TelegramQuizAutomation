@@ -1,19 +1,28 @@
-﻿question,option_1,option_2,option_3,option_4,correct_option,topic
-... is a graphical representation of an algorithm.,Algorithm,Flowchart,Pseudo-code,Program,option_2,Algorithms
-Which of the following is not a type of flowchart?,Sequential flowcharts,Branched flowcharts,Loop flowcharts,Reserved flowchart,option_4,Algorithms
-Which of the following is not a condition for an algorithm?,Use clear expressions,Arrange steps logically,Use one programming language,,option_3,Algorithms
-Java considers the variables number and NuMbEr to be identical.,True,False,,,option_2,Java Basics
-... is a program that translating a high-level language program into a machine language.,Compiler,NetBeans,Interpreter,,option_1,Java Basics
-To be able to read inputs for the Java program, which class must be imported?,System.in,Scanner,InputStream,,option_2,Java Input
-Which one is not error that can occur in a Java program.,Syntax Errors,Runtime Errors,Logical Errors,Warnings Errors,option_4,Java Errors
-Java is case sensitive language.,True,False,,,option_1,Java Basics
-The memory requirement for byte data type is ...,1 byte = 8 bits,4 bytes = 32 bits,,,option_1,Data Types
-Which type of Operators have higher precedence.,Unary Operators,Logical Operators,,,option_1,Operators
-The \t escape character used for:,Return to the start of the line,Create a tab,New line,,option_2,Escape Characters
-When the logical expression AND is true?,If a or b are true,If a and b are true,If both false,,option_2,Logic
-2ab is a valid variable name?,Yes,No,,,option_2,Identifiers
-What is Java Virtual Machine (JVM)?,Abstract machine runs Java,Set of cmd programs,,,option_1,JVM
-Which method is used to read integer.,nextFloat(),nextLine(),nextInt(),,option_3,Scanner
-When the logical expression OR is true?,Both true,One true,Both false,,option_2,Logic
-... is a location in the computer's memory where a value can be stored.,String,Variable,Main Class,,option_2,Memory
-... begins an end-of-line comment.,//,space,\\,*/,option_1,Comments
+﻿question,option_1,option_2,option_3,option_4,correct_option
+"A set of logically written, sequential steps that solve a problem.",Pseudo-code,Algorithm,,,"option_2"
+"Which of the following is NOT a type of flowchart?","Sequential flowchart","Branched flowchart","Loop flowchart","Reserved flowchart","option_4"
+"Which is NOT a condition for writing an algorithm?","Use flowchart or pseudo-code","Use sequence/selection/iteration","Use one programming language",,"option_3"
+"A graphical representation that shows the workflow of an algorithm.",Algorithm,Flowchart,,,"option_2"
+"Java considers number and NuMbEr to be identical.",True,False,,,"option_2"
+"A program that translates high-level code into machine code.",Compiler,NetBeans,,,"option_1"
+"Which class must be imported to read user input?",System.in,Scanner,,,"option_2"
+"Which is NOT an error type in Java?","Syntax Error","Runtime Error","Logical Error","Warning Error","option_4"
+"Java is a case-sensitive language.",True,False,,,"option_1"
+"The memory size of byte data type is:", "1 byte = 8 bits","4 bytes = 32 bits",,,"option_1"
+"Which operators have higher precedence?","Unary Operators","Logical Operators",,,"option_1"
+"The \\t escape character is used to:", "Return to start of line","Create a tab",,,"option_2"
+"When is the AND expression true?","If a or b is true","If a and b are true","If both are false",,"option_2"
+"Is 2ab a valid Java variable name?",Yes,No,,,"option_2"
+"What is the JVM?","Abstract machine to run Java programs","CMD tools for testing",,,"option_1"
+"Which method reads an integer?",nextFloat(),nextLine(),nextInt(),,"option_3"
+"When is the OR expression true?","Both are true","At least one is true","Both are false",,"option_2"
+"A memory location used to store a value.",String,Variable,"Main Class",,"option_2"
+"Java provides which advantage?","Auto memory + multithreading","Manual memory + single thread",,,"option_1"
+"Which begins an end-of-line comment?","//","space","\\","*/","option_1"
+"The (+) operator is which type?","Arithmetic","Logical","Equality",,"option_1"
+"What type of error is in: float y = 5;?","Syntax: int y = 5","Syntax: float Y = 5",,,"option_2"
+"Increment operator ++ increases value by:", "+2","+1",,,"option_2"
+"When all switch cases are false, which executes?","case 0","default",,,"option_2"
+"Which imports the Scanner class?","import Java.Util.Scanner","import java.util.scanner","import java.util.Scanner",,"option_3"
+"Casting char to int gives:","ASCII value","String value",,,"option_1"
+"Case values in switch must be:","Constant expressions","Range expressions",,,"option_1"
