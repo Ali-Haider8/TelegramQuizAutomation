@@ -1,0 +1,21 @@
+question,option_1,option_2,option_3,option_4,correct_option,topic
+... is set of logically written, sequential steps that solve a particular problem. هي مجموعة من الخطوات المنطقية المتسلسلة لحل مشكلة معينة,pseudo-code شيفرة وهمية,algorithm خورازمية,,,option_2,Algorithms
+Which of the following is not a type of flowchart? واحد مما يلي ليس من انواع المخطط الانسيابي,Sequential flowcharts مخطط التتابع,Branched flowcharts مخطط التفرع,Loop flowcharts مخطط التكرار,Reserved flowchart المخطط المعكوس,option_4,Algorithms
+Which of the following is not a condition for an algorithm? واحد مما يلي ليس من شروط كتابة الخورازمية,use clear expressions like flowchart or pseudo-code طريقة التعبير باستخدام المخطط الانسيابي او الشيفرة الوهمية,arrange the algorithm using one of sequence or selection or iteration ways ترتيب الخورازمية بطريقة التسلسل او الاختيار او التكرار,should use one programing language استخدام لغة برمجة واحدة,,option_3,Algorithms
+... is a graphical representation that shows the behavior (workflow) of an algorithm. رسم بياني يوضح سير عمل الخورازمية,Algorithm,Flowchart,,,option_2,Algorithms
+Java considers the variables number and NuMbEr to be identical. (True, False) تعتبر لغة جافا المتغيرين number و NuMbEr متطابقين (نفس الشيء). (صح، خطأ),True,False,,,option_2,Java
+... is a program that translating a high-level language program into a machine language. برنامج يترجم اللغة العالية المستوى الى لغة الالة,Compiler,NetBeans,,,option_1,Java
+To be able to read inputs for the Java program, which class must be imported? للقراءة من المستخدم ما الكلاس الواجب استيراده؟,System.in,Scanner,,,option_2,Java
+Which one is not error that can occur in a Java program. واحد مما يلي لا يعد احد انواع الاخطا في برنامج جافا,Syntax Errors اخطاء قواعدية,Runtime Errors اخطاء التشغيل,Logical Errors اخطاء منطقية,Warnings تحذيرات,option_4,Java
+Java is case sensitive language. جافا حساسة لحالة الاحرف,True,False,,,option_1,Java
+The memory requirement for byte data type is ... السعة التي يشغلها نوع byte في الذاكرة,1 byte = 8 bits,4 bytes = 32 bits,,,option_1,Java
+Which type of Operators have higher precedence. اي نوع معاملات له الاولية في التنفيذ,Unary Operators ( - + ~ ! -- ++ ) المعاملات الاحادية,Logical Operators ( && || ! ) المعاملات المنطقية,,,option_1,Java
+The \t escape character used for: يستخدم الرمز \t من اجل,return to the start of the line العودة الى بداية السطر,create a tab انشاء مسافة جدولة افقية,,,option_2,Java
+When the logical expression AND is true? متى يكون التعبير المنطقي AND يعطي نتيجة True,if a or b are true عندما يكون a أو b صحيحان,if a and b are true عندما يكون كلا a و b صحيحان,if a and b both are false عندما يكون كل من a و b خاطئان,,option_2,Java
+2ab is a valid variable name? هل اسم المتغير (2ab) صحيح في جافا؟,Yes,No,,,option_2,Java
+What is Java Virtual Machine (JVM)? ما هي آلة جافا الافتراضية,is an abstract computing machine that enables a computer to run a Java program آلة حوسبة وهمية تمكن الكمبيوتر من تشغيل برنامج الجافا,set of programs invoked from cmd for developing and testing java programs مجموعة من البرامج تستدعى من سطر الاوامر لتطوير واختبار برامج جافا,,,option_1,Java
+Which method is used to read integer. اي دالة تستخدم لقراءة الاعداد الصحيحة,nextFloat(),nextLine(),nextInt(),,option_3,Java
+When the logical expression OR is true? متى يكون التعبير المنطقي OR صحيحًا,a and b both are true,one of a or b are true, both a and b are false,,option_2,Java
+... is a location in the computer's memory where a value can be stored for use later in a program. هو موقع في ذاكرة الكمبيوتر يستخدم لتخزين قيمة تستخدم لاحقا في البرنامج,String,Variable,Main Class,,option_2,Java
+Java provided developers with some advantages: ... and ... من ميزات جافا,automatic memory management and multithreaded execution ادارة الذاكرة التلقائية والتنفيذ متعدد الخيوط,manual memory allocation and single-threaded execution ادارة يدوية للذاكرة وتنفيذ احادي الخيوط,,,option_1,Java
+... begins an end-of-line comment.,//,space,\\,*/,option_1,Java
