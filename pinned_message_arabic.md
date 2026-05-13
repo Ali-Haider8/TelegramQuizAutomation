@@ -1,7 +1,0 @@
-📘 [1 / معلقة عنترة](https://t.me/ArabicQuizzesCSUoK/49)  
-📘 [2 / حياة عنترة](https://t.me/ArabicQuizzesCSUoK/60)  
-📘 [3 / طريقة كتابة حرفي (ض – ظ)](https://t.me/ArabicQuizzesCSUoK/69)  
-📘 [4 / الهمزة](https://t.me/ArabicQuizzesCSUoK/78)  
-📘 [5 / واجب الهمزة](https://t.me/ArabicQuizzesCSUoK/89)  
-📘 [6 / المبتدأ والخبر](https://t.me/ArabicQuizzesCSUoK/95)  
-📘 [7 / أسئلة المبتدأ والخبر](https://t.me/ArabicQuizzesCSUoK/106)  
